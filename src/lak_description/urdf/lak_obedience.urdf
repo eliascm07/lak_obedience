@@ -1,0 +1,634 @@
+<?xml version="1.0" ?>
+<robot name="lak_obedience_robot">
+
+  <link name="base_link"/>
+
+  <link name="trunk_assembly_1">
+    <visual name="trunk_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/trunk_assembly_1.stl"/>
+      </geometry>
+      <material name="trunk_assembly_1-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="trunk_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/trunk_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.30884485"/>
+      <inertia ixx="0.00067052576" iyy="0.00056895196" izz="0.00039387399" ixy="-1.5346031e-06" ixz="5.1242073e-06" iyz="-1.5397975e-06"/>
+      <origin xyz="-0.086707772 0.0020566718 0.15152511" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="hip_roll_assembly_2">
+    <visual name="hip_roll_assembly_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/hip_roll_assembly_2.stl"/>
+      </geometry>
+      <material name="hip_roll_assembly_2-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="hip_roll_assembly_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/hip_roll_assembly_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.06648"/>
+      <inertia ixx="2.4441098e-05" iyy="2.8181842e-05" izz="1.4268674e-05" ixy="2.3565815e-09" ixz="-3.8105868e-07" iyz="-7.5003565e-09"/>
+      <origin xyz="0.00079508053 -5.4654096e-06 -0.03306002" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="neck_pitch_assembly_1">
+    <visual name="neck_pitch_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/neck_pitch_assembly_1.stl"/>
+      </geometry>
+      <material name="neck_pitch_assembly_1-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="neck_pitch_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/neck_pitch_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.06618"/>
+      <inertia ixx="3.4945638e-05" iyy="1.7023145e-05" izz="2.8004252e-05" ixy="8.7563261e-09" ixz="-2.1559157e-09" iyz="-1.8518808e-08"/>
+      <origin xyz="-5.6313727e-06 0.04929676 0.018178556" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="hip_roll_assembly_1">
+    <visual name="hip_roll_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/hip_roll_assembly_1.stl"/>
+      </geometry>
+      <material name="hip_roll_assembly_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="hip_roll_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/hip_roll_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.06648"/>
+      <inertia ixx="2.4441098e-05" iyy="2.8181842e-05" izz="1.4268674e-05" ixy="2.3565815e-09" ixz="-3.8105868e-07" iyz="-7.5003565e-09"/>
+      <origin xyz="0.00079508053 -5.4654096e-06 -0.03306002" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="body_assembly_1">
+    <visual name="body_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/body_assembly_1.stl"/>
+      </geometry>
+      <material name="body_assembly_1-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="body_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/body_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.50517067"/>
+      <inertia ixx="0.0012730263" iyy="0.0036836164" izz="0.0032928462" ixy="-1.0733093e-05" ixz="2.4820111e-05" iyz="4.702926e-07"/>
+      <origin xyz="-0.014747511 -0.010260168 0.057509706" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="left_roll_to_pitch_assembly_1">
+    <visual name="left_roll_to_pitch_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_roll_to_pitch_assembly_1.stl"/>
+      </geometry>
+      <material name="left_roll_to_pitch_assembly_1-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="left_roll_to_pitch_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_roll_to_pitch_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07516"/>
+      <inertia ixx="2.5268199e-05" iyy="4.157379e-05" izz="2.8286895e-05" ixy="1.227435e-07" ixz="-7.328569e-07" iyz="-1.056917e-07"/>
+      <origin xyz="0.050749661 -0.00040751153 0.020437684" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="head_pitch_to_yaw_1">
+    <visual name="head_pitch_to_yaw_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/head_pitch_to_yaw_1.stl"/>
+      </geometry>
+      <material name="head_pitch_to_yaw_1-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="head_pitch_to_yaw_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/head_pitch_to_yaw_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.016937788"/>
+      <inertia ixx="9.4303589e-06" iyy="4.6476284e-06" izz="8.0291501e-06" ixy="1.3519528e-06" ixz="3.0589894e-08" iyz="-8.4280233e-08"/>
+      <origin xyz="-0.0076624666 0.026014959 0.01866807" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="right_roll_to_pitch_assembly_1">
+    <visual name="right_roll_to_pitch_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_roll_to_pitch_assembly_1.stl"/>
+      </geometry>
+      <material name="right_roll_to_pitch_assembly_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="right_roll_to_pitch_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_roll_to_pitch_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07516"/>
+      <inertia ixx="2.5267599e-05" iyy="4.157379e-05" izz="2.8286295e-05" ixy="-1.3117159e-07" ixz="7.328573e-07" iyz="-8.9468407e-08"/>
+      <origin xyz="-0.050749661 -0.00041720549 0.020437684" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="knee_and_ankle_assembly_2">
+    <visual name="knee_and_ankle_assembly_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_2.stl"/>
+      </geometry>
+      <material name="knee_and_ankle_assembly_2-material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="knee_and_ankle_assembly_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07259"/>
+      <inertia ixx="4.995747e-05" iyy="1.8727312e-05" izz="4.2393204e-05" ixy="1.038166e-08" ixz="2.2517543e-09" iyz="8.8104946e-08"/>
+      <origin xyz="5.0185935e-06 -0.057746502 0.018113576" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="neck_yaw_assembly_1">
+    <visual name="neck_yaw_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/neck_yaw_assembly_1.stl"/>
+      </geometry>
+      <material name="neck_yaw_assembly_1-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="neck_yaw_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/neck_yaw_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.091809889"/>
+      <inertia ixx="3.1170636e-05" iyy="6.9493543e-05" izz="7.040248e-05" ixy="4.2942916e-09" ixz="-4.4125134e-06" iyz="-3.820275e-09"/>
+      <origin xyz="0.0041290688 3.9574459e-06 -0.02228284" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="knee_and_ankle_assembly_1">
+    <visual name="knee_and_ankle_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_1.stl"/>
+      </geometry>
+      <material name="knee_and_ankle_assembly_1-material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="knee_and_ankle_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07259"/>
+      <inertia ixx="4.995747e-05" iyy="1.8727312e-05" izz="4.2393204e-05" ixy="-1.038166e-08" ixz="-2.2517543e-09" iyz="8.8104946e-08"/>
+      <origin xyz="5.0185935e-06 0.057746502 0.018986424" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="knee_and_ankle_assembly_4">
+    <visual name="knee_and_ankle_assembly_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_4.stl"/>
+      </geometry>
+      <material name="knee_and_ankle_assembly_4-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="knee_and_ankle_assembly_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07259"/>
+      <inertia ixx="4.995747e-05" iyy="1.8727312e-05" izz="4.2393204e-05" ixy="1.038166e-08" ixz="2.2517543e-09" iyz="8.8104946e-08"/>
+      <origin xyz="5.0185935e-06 -0.057746502 0.018113576" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="left_cache_1">
+    <visual name="left_cache_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_cache_1.stl"/>
+      </geometry>
+      <material name="left_cache_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="left_cache_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_cache_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.080779453"/>
+      <inertia ixx="0.00014066053" iyy="7.498573e-05" izz="0.00018993289" ixy="-2.9211115e-05" ixz="5.4965656e-07" iyz="-7.6875804e-06"/>
+      <origin xyz="-0.0019007184 0.0076053912 0.0031282737" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="head_assembly_1">
+    <visual name="head_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/head_assembly_1.stl"/>
+      </geometry>
+      <material name="head_assembly_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="head_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/head_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.39817444"/>
+      <inertia ixx="0.0023304839" iyy="0.0015951762" izz="0.0010423708" ixy="-1.9860687e-06" ixz="9.2757694e-05" iyz="-1.570785e-05"/>
+      <origin xyz="0.0081407589 -0.0040178596 0.020692257" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="knee_and_ankle_assembly_3">
+    <visual name="knee_and_ankle_assembly_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_3.stl"/>
+      </geometry>
+      <material name="knee_and_ankle_assembly_3-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="knee_and_ankle_assembly_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/knee_and_ankle_assembly_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07259"/>
+      <inertia ixx="4.995747e-05" iyy="1.8727312e-05" izz="4.2393204e-05" ixy="1.038166e-08" ixz="2.2517543e-09" iyz="8.8104946e-08"/>
+      <origin xyz="5.0185935e-06 -0.057746502 0.018113576" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="right_cache_1">
+    <visual name="right_cache_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_cache_1.stl"/>
+      </geometry>
+      <material name="right_cache_1-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="right_cache_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_cache_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.080779453"/>
+      <inertia ixx="0.00014066053" iyy="7.498573e-05" izz="0.00018993289" ixy="2.9211115e-05" ixz="5.4965656e-07" iyz="7.6875804e-06"/>
+      <origin xyz="0.014099282 -0.0076053912 0.0031282737" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="foot_assembly_2">
+    <visual name="foot_assembly_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/foot_assembly_2.stl"/>
+      </geometry>
+      <material name="foot_assembly_2-material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="foot_assembly_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/foot_assembly_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07524"/>
+      <inertia ixx="1.8748235e-05" iyy="6.7442711e-05" izz="6.061e-05" ixy="1.5883913e-06" ixz="-6.5235393e-09" iyz="5.6739085e-08"/>
+      <origin xyz="0.011071805 -0.024660829 0.019062632" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="left_antenna_holder_1">
+    <visual name="left_antenna_holder_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_antenna_holder_1.stl"/>
+      </geometry>
+      <material name="left_antenna_holder_1-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="left_antenna_holder_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/left_antenna_holder_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0036731863"/>
+      <inertia ixx="5.0692309e-07" iyy="2.3790195e-07" izz="7.1227371e-07" ixy="-5.573063e-14" ixz="-2.0433466e-09" iyz="-1.4851015e-14"/>
+      <origin xyz="-0.0056702461 8.6356422e-11 -0.002161303" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="right_antenna_holder_1">
+    <visual name="right_antenna_holder_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_antenna_holder_1.stl"/>
+      </geometry>
+      <material name="right_antenna_holder_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="right_antenna_holder_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/right_antenna_holder_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0036731842"/>
+      <inertia ixx="5.069226e-07" iyy="2.3790185e-07" izz="7.1227316e-07" ixy="-8.6144538e-14" ixz="-2.0433797e-09" iyz="-1.4854343e-14"/>
+      <origin xyz="-0.0056702492 7.6407727e-10 -0.0021613012" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="foot_assembly_1">
+    <visual name="foot_assembly_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/foot_assembly_1.stl"/>
+      </geometry>
+      <material name="foot_assembly_1-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="foot_assembly_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/foot_assembly_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.07524"/>
+      <inertia ixx="1.8748235e-05" iyy="6.7442711e-05" izz="6.061e-05" ixy="1.5883913e-06" ixz="-6.5235393e-09" iyz="5.6739085e-08"/>
+      <origin xyz="0.011071805 -0.024660829 0.019062632" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="antenna_2">
+    <visual name="antenna_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/antenna_2.stl"/>
+      </geometry>
+      <material name="antenna_2-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="antenna_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/antenna_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00054310283"/>
+      <inertia ixx="1.1954461e-06" iyy="1.1954461e-06" izz="3.3903872e-10" ixy="0" ixz="0" iyz="-7.0226319e-16"/>
+      <origin xyz="3.6143523e-09 9.4395887e-10 -0.083746206" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="antenna_1">
+    <visual name="antenna_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/antenna_1.stl"/>
+      </geometry>
+      <material name="antenna_1-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="antenna_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes/visual/antenna_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.00054310283"/>
+      <inertia ixx="1.1954461e-06" iyy="1.1954461e-06" izz="3.3903872e-10" ixy="0" ixz="0" iyz="-7.0226314e-16"/>
+      <origin xyz="3.6143523e-09 9.4395887e-10 -0.083746206" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <joint name="chasis_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="trunk_assembly_1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <joint name="dof_left_hip_yaw" type="revolute">
+    <origin xyz="-0.081685897 0.036856802 0.15174282" rpy="1.5509545e-16 0 0"/>
+    <parent link="trunk_assembly_1"/>
+    <child link="hip_roll_assembly_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_neck_pitch" type="revolute">
+    <origin xyz="-0.061685897 0.021006802 0.19580282" rpy="1.5707963 0 -3.3306691e-16"/>
+    <parent link="trunk_assembly_1"/>
+    <child link="neck_pitch_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_right_hip_yaw" type="revolute">
+    <origin xyz="-0.081685897 -0.033143198 0.15174282" rpy="-1.5509545e-16 0 0"/>
+    <parent link="trunk_assembly_1"/>
+    <child link="hip_roll_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_body_bottom" type="fixed">
+    <origin xyz="-0.091685897 0.011856802 0.081917817" rpy="0 0 0"/>
+    <parent link="trunk_assembly_1"/>
+    <child link="body_assembly_1"/>
+  </joint>
+  <joint name="dof_left_hip_roll" type="revolute">
+    <origin xyz="0.01905 -1.0408341e-17 -0.046015" rpy="-1.5707963 0 1.5707963"/>
+    <parent link="hip_roll_assembly_2"/>
+    <child link="left_roll_to_pitch_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_head_pitch" type="revolute">
+    <origin xyz="1.0408341e-17 0.066 2.7755576e-17" rpy="0 0 0"/>
+    <parent link="neck_pitch_assembly_1"/>
+    <child link="head_pitch_to_yaw_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_right_hip_roll" type="revolute">
+    <origin xyz="0.01905 -1.0408341e-17 -0.046015" rpy="-1.5707963 0 1.5707963"/>
+    <parent link="hip_roll_assembly_1"/>
+    <child link="right_roll_to_pitch_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_left_hip_pitch" type="revolute">
+    <origin xyz="0.07415 -4.3368087e-18 0.03511" rpy="3.1415927 1.5707963 0"/>
+    <parent link="left_roll_to_pitch_assembly_1"/>
+    <child link="knee_and_ankle_assembly_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_head_yaw" type="revolute">
+    <origin xyz="0 0.057 0.01905" rpy="-1.5707963 0 0"/>
+    <parent link="head_pitch_to_yaw_1"/>
+    <child link="neck_yaw_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_right_hip_pitch" type="revolute">
+    <origin xyz="-0.07415 6.9388939e-18 0.03511" rpy="-0 1.5707963 0"/>
+    <parent link="right_roll_to_pitch_assembly_1"/>
+    <child link="knee_and_ankle_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_left_knee" type="revolute">
+    <origin xyz="-1.3877788e-17 -0.07865 0.0001" rpy="0 0 0"/>
+    <parent link="knee_and_ankle_assembly_2"/>
+    <child link="knee_and_ankle_assembly_4"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_left_cache" type="fixed">
+    <origin xyz="0.008 -0.020325 -0.0039" rpy="0 0 0"/>
+    <parent link="knee_and_ankle_assembly_2"/>
+    <child link="left_cache_1"/>
+  </joint>
+  <joint name="dof_head_roll" type="revolute">
+    <origin xyz="0.04095 0 -0.01915" rpy="0 -1.5707963 0"/>
+    <parent link="neck_yaw_assembly_1"/>
+    <child link="head_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_right_knee" type="revolute">
+    <origin xyz="-2.7755576e-17 0.07865 0.037" rpy="-3.1415927 0 0"/>
+    <parent link="knee_and_ankle_assembly_1"/>
+    <child link="knee_and_ankle_assembly_3"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_right_cache" type="fixed">
+    <origin xyz="-0.008 0.020325 -0.00385" rpy="0 0 0"/>
+    <parent link="knee_and_ankle_assembly_1"/>
+    <child link="right_cache_1"/>
+  </joint>
+  <joint name="dof_left_ankle" type="revolute">
+    <origin xyz="-1.3877788e-17 -0.07865 0.0001" rpy="0 0 0"/>
+    <parent link="knee_and_ankle_assembly_4"/>
+    <child link="foot_assembly_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_left_antenna" type="revolute">
+    <origin xyz="0.00070406946 0.060662838 0.11643485" rpy="-3.1415927 1.3045792 1.3234424"/>
+    <parent link="head_assembly_1"/>
+    <child link="left_antenna_holder_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_right_antenna" type="revolute">
+    <origin xyz="0.00070406946 -0.060662838 0.11643485" rpy="3.1415927 1.3045792 -1.3234424"/>
+    <parent link="head_assembly_1"/>
+    <child link="right_antenna_holder_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="dof_right_ankle" type="revolute">
+    <origin xyz="-1.3877788e-17 -0.07865 0.0001" rpy="0 0 0"/>
+    <parent link="knee_and_ankle_assembly_3"/>
+    <child link="foot_assembly_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="fix_left_antenna-1" type="fixed">
+    <origin xyz="-8.1913391e-09 -0.020627793 -0.0034999962" rpy="1.5707963 -0.26621716 1.6959975e-09"/>
+    <parent link="left_antenna_holder_1"/>
+    <child link="antenna_2"/>
+  </joint>
+  <joint name="fix_right_antenna-1" type="fixed">
+    <origin xyz="-7.4958343e-09 0.019604581 -0.0034999988" rpy="-1.5707963 -0.26621716 -1.6959975e-09"/>
+    <parent link="right_antenna_holder_1"/>
+    <child link="antenna_1"/>
+  </joint>
+</robot>
