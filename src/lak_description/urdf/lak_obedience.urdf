@@ -14,9 +14,9 @@
       </material>
     </visual>
     <collision name="trunk_assembly_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.025 0.003 0.06" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/trunk_assembly_1.stl"/>
+        
       </geometry>
     </collision>
     <inertial>
@@ -98,13 +98,13 @@
         <mesh filename="package://lak_description/meshes/visual/body_assembly_1.stl"/>
       </geometry>
       <material name="body_assembly_1-material">
-        <color rgba="1 0.5 0 1"/>
+        <color rgba="1 1 1 1"/>
       </material>
     </visual>
     <collision name="body_assembly_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.025 -0.01 0.06" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/body_assembly_1.stl"/>
+        <box size="0.19 0.10 0.14"/>
       </geometry>
     </collision>
     <inertial>
@@ -278,9 +278,9 @@
       </material>
     </visual>
     <collision name="left_cache_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0.005 0 0.01" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/left_cache_1.stl"/>
+        <box size="0.08 0.16 0.03"/>
       </geometry>
     </collision>
     <inertial>
@@ -300,9 +300,9 @@
       </material>
     </visual>
     <collision name="head_assembly_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/head_assembly_1.stl"/>
+        <box size="0.05 0.15 0.20"/>
       </geometry>
     </collision>
     <inertial>
@@ -344,9 +344,9 @@
       </material>
     </visual>
     <collision name="right_cache_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0.02 0 0.01" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/right_cache_1.stl"/>
+        <box size="0.08 0.16 0.03"/>
       </geometry>
     </collision>
     <inertial>
@@ -366,9 +366,9 @@
       </material>
     </visual>
     <collision name="foot_assembly_2_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0.01 -0.02 0.02" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/foot_assembly_2.stl"/>
+        <box size="0.1 0.03 0.045"/>
       </geometry>
     </collision>
     <inertial>
@@ -432,9 +432,9 @@
       </material>
     </visual>
     <collision name="foot_assembly_1_collision">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0.01 -0.02 0.02" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://lak_description/meshes/visual/foot_assembly_1.stl"/>
+        <box size="0.1 0.03 0.045"/>
       </geometry>
     </collision>
     <inertial>
@@ -491,32 +491,36 @@
   <joint name="chasis_joint" type="fixed">
     <parent link="base_link"/>
     <child link="trunk_assembly_1"/>
-    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <origin xyz="0 0 0.174" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
   </joint>
   <joint name="dof_left_hip_yaw" type="revolute">
-    <origin xyz="-0.081685897 0.036856802 0.15174282" rpy="1.5509545e-16 0 0"/>
+    <origin xyz="0.01 0.036856802 0.0698310383" rpy="1.5509545e-16 0 0"/>
+    <!-- <origin xyz="-0.081685897 0.036856802 0.15174282" rpy="1.5509545e-16 0 0"/> -->
     <parent link="trunk_assembly_1"/>
     <child link="hip_roll_assembly_2"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.523599" upper="0.523599"/> <!-- lower="-6.2831853" upper="6.2831853" -->
   </joint>
   <joint name="dof_neck_pitch" type="revolute">
-    <origin xyz="-0.061685897 0.021006802 0.19580282" rpy="1.5707963 0 -3.3306691e-16"/>
+    <origin xyz="0.03 0.021006802 0.1138910383" rpy="1.5707963 0 -3.3306691e-16"/>
+    <!-- <origin xyz="-0.061685897 0.021006802 0.19580282" rpy="1.5707963 0 -3.3306691e-16"/> -->
     <parent link="trunk_assembly_1"/>
     <child link="neck_pitch_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.349066" upper="1.13446"/>
   </joint>
   <joint name="dof_right_hip_yaw" type="revolute">
-    <origin xyz="-0.081685897 -0.033143198 0.15174282" rpy="-1.5509545e-16 0 0"/>
+    <origin xyz="0.01 -0.033143198 0.0698310383" rpy="-1.5509545e-16 0 0"/>
+    <!-- <origin xyz="-0.081685897 -0.033143198 0.15174282" rpy="-1.5509545e-16 0 0"/> -->
     <parent link="trunk_assembly_1"/>
     <child link="hip_roll_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.523599" upper="0.523599"/>
   </joint>
   <joint name="fix_body_bottom" type="fixed">
-    <origin xyz="-0.091685897 0.011856802 0.081917817" rpy="0 0 0"/>
+    <origin xyz="0.0 0.011856802 0.0" rpy="0 0 0"/>
+    <!-- <origin xyz="-0.091685897 0.011856802 0.081917817" rpy="0 0 0"/> -->
     <parent link="trunk_assembly_1"/>
     <child link="body_assembly_1"/>
   </joint>
@@ -525,49 +529,49 @@
     <parent link="hip_roll_assembly_2"/>
     <child link="left_roll_to_pitch_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.436332" upper="0.436332"/>
   </joint>
   <joint name="dof_head_pitch" type="revolute">
     <origin xyz="1.0408341e-17 0.066 2.7755576e-17" rpy="0 0 0"/>
     <parent link="neck_pitch_assembly_1"/>
     <child link="head_pitch_to_yaw_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.785398" upper="0.785398"/>
   </joint>
   <joint name="dof_right_hip_roll" type="revolute">
     <origin xyz="0.01905 -1.0408341e-17 -0.046015" rpy="-1.5707963 0 1.5707963"/>
     <parent link="hip_roll_assembly_1"/>
     <child link="right_roll_to_pitch_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.436332" upper="0.436332"/>
   </joint>
   <joint name="dof_left_hip_pitch" type="revolute">
     <origin xyz="0.07415 -4.3368087e-18 0.03511" rpy="3.1415927 1.5707963 0"/>
     <parent link="left_roll_to_pitch_assembly_1"/>
     <child link="knee_and_ankle_assembly_2"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.22173" upper="0.523599"/>
   </joint>
   <joint name="dof_head_yaw" type="revolute">
     <origin xyz="0 0.057 0.01905" rpy="-1.5707963 0 0"/>
     <parent link="head_pitch_to_yaw_1"/>
     <child link="neck_yaw_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-2.96706" upper="2.96706"/>
   </joint>
   <joint name="dof_right_hip_pitch" type="revolute">
     <origin xyz="-0.07415 6.9388939e-18 0.03511" rpy="-0 1.5707963 0"/>
     <parent link="right_roll_to_pitch_assembly_1"/>
     <child link="knee_and_ankle_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.523599" upper="1.22173"/>
   </joint>
   <joint name="dof_left_knee" type="revolute">
     <origin xyz="-1.3877788e-17 -0.07865 0.0001" rpy="0 0 0"/>
     <parent link="knee_and_ankle_assembly_2"/>
     <child link="knee_and_ankle_assembly_4"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="fix_left_cache" type="fixed">
     <origin xyz="0.008 -0.020325 -0.0039" rpy="0 0 0"/>
@@ -579,14 +583,14 @@
     <parent link="neck_yaw_assembly_1"/>
     <child link="head_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-0.523599" upper="0.523599"/>
   </joint>
   <joint name="dof_right_knee" type="revolute">
     <origin xyz="-2.7755576e-17 0.07865 0.037" rpy="-3.1415927 0 0"/>
     <parent link="knee_and_ankle_assembly_1"/>
     <child link="knee_and_ankle_assembly_3"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="fix_right_cache" type="fixed">
     <origin xyz="-0.008 0.020325 -0.00385" rpy="0 0 0"/>
@@ -598,28 +602,28 @@
     <parent link="knee_and_ankle_assembly_4"/>
     <child link="foot_assembly_2"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="fix_left_antenna" type="revolute">
     <origin xyz="0.00070406946 0.060662838 0.11643485" rpy="-3.1415927 1.3045792 1.3234424"/>
     <parent link="head_assembly_1"/>
     <child link="left_antenna_holder_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="fix_right_antenna" type="revolute">
     <origin xyz="0.00070406946 -0.060662838 0.11643485" rpy="3.1415927 1.3045792 -1.3234424"/>
     <parent link="head_assembly_1"/>
     <child link="right_antenna_holder_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="dof_right_ankle" type="revolute">
     <origin xyz="-1.3877788e-17 -0.07865 0.0001" rpy="0 0 0"/>
     <parent link="knee_and_ankle_assembly_3"/>
     <child link="foot_assembly_1"/>
     <axis xyz="0 0 -1"/>
-    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+    <limit effort="1" velocity="1" lower="-1.5708" upper="1.5708"/>
   </joint>
   <joint name="fix_left_antenna-1" type="fixed">
     <origin xyz="-8.1913391e-09 -0.020627793 -0.0034999962" rpy="1.5707963 -0.26621716 1.6959975e-09"/>
