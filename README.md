@@ -59,7 +59,7 @@ ros2 launch lak_bringup display.launch.py
 ```bash
 src/
  ├── lak_bringup/
- ├── otros_paquetes/
+ ├── lak_description/
 ```
 
 ---
