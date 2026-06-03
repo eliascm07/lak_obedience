@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "cf0e84da82f2b2876dc40bd2",
+    "documentMicroversion": "57666abf443cf2e7d88a3696",
+    "elementId": "b174e73f0b92f82ff717df12",
+    "fullConfiguration": "default",
+    "id": "MMYrJ8GU6Tulh9Ezl",
+    "isStandardContent": false,
+    "name": "head_pitch_to_yaw <1>",
+    "partId": "RGCD",
+    "suppressed": false,
+    "type": "Part"
+}
