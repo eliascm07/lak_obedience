@@ -1,0 +1,1585 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 238
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /Grid1
+        - /RobotModel1
+        - /RobotModel1/Mass Properties1
+        - /RobotModel1/Links1
+        - /TF1
+        - /TF1/Tree1
+        - /TF1/Tree1/root1
+        - /TF1/Tree1/root1/tapa1/delantera1
+        - /TF1/Tree1/root1/trunk_bottom1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1/drive_palonier_61
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1/drive_palonier_61/wj_wk00_0122topcabinetcase_95_61
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1/drive_palonier_61/wj_wk00_0122topcabinetcase_95_61/head_yaw_to_roll1
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1/drive_palonier_61/wj_wk00_0122topcabinetcase_95_61/head_yaw_to_roll1/drive_palonier_111
+        - /TF1/Tree1/root1/trunk_bottom1/trunk_top1/wj_wk00_0122topcabinetcase_95_91/drive_palonier_91/neck_left_sheet1/wj_wk00_0122topcabinetcase_951/drive_palonier1/head_pitch_to_yaw1/drive_palonier_61/wj_wk00_0122topcabinetcase_95_61/head_yaw_to_roll1/drive_palonier_111/wj_wk00_0122topcabinetcase_95_111
+      Splitter Ratio: 0.8309859037399292
+    Tree Height: 579
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        acrilico:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        antenna:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        antenna_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        battery_pack_lid:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bms:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bno055:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        board:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_back:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_middle_bottom:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_middle_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bulb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        bulb_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cell:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        cell_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        delantera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        drive_palonier_9:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        flash_light_module:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        flash_reflector_interface:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_bottom_pla:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_bottom_pla_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_bottom_tpu:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_bottom_tpu_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_side:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_side_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_side__1__loop_closure:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        foot_side__1__loop_closure_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        foot_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        foot_top_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        glass:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        glass_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        glass_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        glass_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_bot_sheet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_pitch_to_yaw:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_roll_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_yaw_to_roll:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        holder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_antenna_holder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_cache:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_eye:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_left_sheet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_left_sheet_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_left_sheet_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_left_sheet_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_right_sheet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_right_sheet_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_right_sheet_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_knee_to_ankle_right_sheet_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_roll_to_pitch:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_spacer:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_spacer_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_spacer_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leg_spacer_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        neck_left_sheet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        neck_right_sheet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        passive_palonier_9:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        planar_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_1_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_1_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_1_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_1_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_1_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_2_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_3_loop_closure:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_3_loop_closure_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_3_loop_closure_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        planar_3_loop_closure_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        power_switch:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        raspberrypizerow:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_antenna_holder:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_cache:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_eye:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_roll_to_pitch:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_bearing:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_bearing_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_bearing_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_motor_bottom:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_motor_bottom_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_motor_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        roll_motor_top_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        sg90:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sg90_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        speaker_interface:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        speaker_stand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        speaker_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        tapa:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        trunk_bottom:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        trunk_mate_connector:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        trunk_top:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        usb_c_charger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0122topcabinetcase_95_9:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0123middlecase_56_9:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_10:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_12:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_8:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wj_wk00_0124bottomcase_45_9:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        z:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        z_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        z_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        z_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        z_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        acrilico:
+          Value: false
+        antenna:
+          Value: false
+        antenna_1:
+          Value: false
+        battery_pack_lid:
+          Value: false
+        bms:
+          Value: false
+        bno055:
+          Value: false
+        board:
+          Value: false
+        body_back:
+          Value: false
+        body_middle_bottom:
+          Value: false
+        body_middle_top:
+          Value: false
+        bulb:
+          Value: false
+        bulb_1:
+          Value: false
+        cam:
+          Value: false
+        cell:
+          Value: false
+        cell_1:
+          Value: false
+        delantera:
+          Value: false
+        drive_palonier:
+          Value: false
+        drive_palonier_1:
+          Value: false
+        drive_palonier_10:
+          Value: false
+        drive_palonier_11:
+          Value: false
+        drive_palonier_12:
+          Value: false
+        drive_palonier_13:
+          Value: false
+        drive_palonier_2:
+          Value: false
+        drive_palonier_3:
+          Value: false
+        drive_palonier_4:
+          Value: false
+        drive_palonier_5:
+          Value: false
+        drive_palonier_6:
+          Value: false
+        drive_palonier_7:
+          Value: false
+        drive_palonier_8:
+          Value: false
+        drive_palonier_9:
+          Value: false
+        flash_light_module:
+          Value: false
+        flash_reflector_interface:
+          Value: false
+        foot_bottom_pla:
+          Value: false
+        foot_bottom_pla_1:
+          Value: false
+        foot_bottom_tpu:
+          Value: false
+        foot_bottom_tpu_1:
+          Value: false
+        foot_side:
+          Value: false
+        foot_side_1:
+          Value: false
+        foot_side__1__loop_closure:
+          Value: false
+        foot_side__1__loop_closure_1:
+          Value: false
+        foot_top:
+          Value: false
+        foot_top_1:
+          Value: false
+        glass:
+          Value: false
+        glass_1:
+          Value: false
+        glass_2:
+          Value: false
+        glass_3:
+          Value: false
+        head:
+          Value: false
+        head_bot_sheet:
+          Value: false
+        head_pitch_to_yaw:
+          Value: false
+        head_roll_mount:
+          Value: false
+        head_yaw_to_roll:
+          Value: false
+        holder:
+          Value: false
+        left_antenna_holder:
+          Value: false
+        left_cache:
+          Value: false
+        left_eye:
+          Value: false
+        left_knee_to_ankle_left_sheet:
+          Value: false
+        left_knee_to_ankle_left_sheet_1:
+          Value: false
+        left_knee_to_ankle_left_sheet_2:
+          Value: false
+        left_knee_to_ankle_left_sheet_3:
+          Value: false
+        left_knee_to_ankle_right_sheet:
+          Value: false
+        left_knee_to_ankle_right_sheet_1:
+          Value: false
+        left_knee_to_ankle_right_sheet_2:
+          Value: false
+        left_knee_to_ankle_right_sheet_3:
+          Value: false
+        left_roll_to_pitch:
+          Value: false
+        leg_spacer:
+          Value: false
+        leg_spacer_1:
+          Value: false
+        leg_spacer_2:
+          Value: false
+        leg_spacer_3:
+          Value: false
+        neck_left_sheet:
+          Value: false
+        neck_right_sheet:
+          Value: false
+        passive_palonier:
+          Value: false
+        passive_palonier_1:
+          Value: false
+        passive_palonier_10:
+          Value: false
+        passive_palonier_11:
+          Value: false
+        passive_palonier_12:
+          Value: false
+        passive_palonier_13:
+          Value: false
+        passive_palonier_2:
+          Value: false
+        passive_palonier_3:
+          Value: false
+        passive_palonier_4:
+          Value: false
+        passive_palonier_5:
+          Value: false
+        passive_palonier_6:
+          Value: false
+        passive_palonier_7:
+          Value: false
+        passive_palonier_8:
+          Value: false
+        passive_palonier_9:
+          Value: false
+        planar_1:
+          Value: false
+        planar_1_1:
+          Value: false
+        planar_1_2:
+          Value: false
+        planar_1_3:
+          Value: false
+        planar_1_4:
+          Value: false
+        planar_1_5:
+          Value: false
+        planar_2:
+          Value: false
+        planar_2_1:
+          Value: false
+        planar_3_loop_closure:
+          Value: false
+        planar_3_loop_closure_1:
+          Value: false
+        planar_3_loop_closure_2:
+          Value: false
+        planar_3_loop_closure_3:
+          Value: false
+        power_switch:
+          Value: false
+        raspberrypizerow:
+          Value: false
+        right_antenna_holder:
+          Value: false
+        right_cache:
+          Value: false
+        right_eye:
+          Value: false
+        right_roll_to_pitch:
+          Value: false
+        roll_bearing:
+          Value: false
+        roll_bearing_1:
+          Value: false
+        roll_bearing_2:
+          Value: false
+        roll_motor_bottom:
+          Value: false
+        roll_motor_bottom_1:
+          Value: false
+        roll_motor_top:
+          Value: false
+        roll_motor_top_1:
+          Value: false
+        root:
+          Value: false
+        sg90:
+          Value: false
+        sg90_1:
+          Value: false
+        speaker_interface:
+          Value: false
+        speaker_stand:
+          Value: false
+        speaker_top:
+          Value: false
+        tapa:
+          Value: false
+        trunk_bottom:
+          Value: true
+        trunk_mate_connector:
+          Value: false
+        trunk_top:
+          Value: false
+        usb_c_charger:
+          Value: false
+        wj_wk00_0122topcabinetcase_95:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_1:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_10:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_11:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_12:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_13:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_2:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_3:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_4:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_5:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_6:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_7:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_8:
+          Value: false
+        wj_wk00_0122topcabinetcase_95_9:
+          Value: false
+        wj_wk00_0123middlecase_56:
+          Value: false
+        wj_wk00_0123middlecase_56_1:
+          Value: false
+        wj_wk00_0123middlecase_56_10:
+          Value: false
+        wj_wk00_0123middlecase_56_11:
+          Value: false
+        wj_wk00_0123middlecase_56_12:
+          Value: false
+        wj_wk00_0123middlecase_56_13:
+          Value: false
+        wj_wk00_0123middlecase_56_2:
+          Value: false
+        wj_wk00_0123middlecase_56_3:
+          Value: false
+        wj_wk00_0123middlecase_56_4:
+          Value: false
+        wj_wk00_0123middlecase_56_5:
+          Value: false
+        wj_wk00_0123middlecase_56_6:
+          Value: false
+        wj_wk00_0123middlecase_56_7:
+          Value: false
+        wj_wk00_0123middlecase_56_8:
+          Value: false
+        wj_wk00_0123middlecase_56_9:
+          Value: false
+        wj_wk00_0124bottomcase_45:
+          Value: false
+        wj_wk00_0124bottomcase_45_1:
+          Value: false
+        wj_wk00_0124bottomcase_45_10:
+          Value: false
+        wj_wk00_0124bottomcase_45_11:
+          Value: false
+        wj_wk00_0124bottomcase_45_12:
+          Value: false
+        wj_wk00_0124bottomcase_45_13:
+          Value: false
+        wj_wk00_0124bottomcase_45_2:
+          Value: false
+        wj_wk00_0124bottomcase_45_3:
+          Value: false
+        wj_wk00_0124bottomcase_45_4:
+          Value: false
+        wj_wk00_0124bottomcase_45_5:
+          Value: false
+        wj_wk00_0124bottomcase_45_6:
+          Value: false
+        wj_wk00_0124bottomcase_45_7:
+          Value: false
+        wj_wk00_0124bottomcase_45_8:
+          Value: false
+        wj_wk00_0124bottomcase_45_9:
+          Value: false
+        z:
+          Value: false
+        z_1:
+          Value: false
+        z_2:
+          Value: false
+        z_3:
+          Value: false
+        z_4:
+          Value: false
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        root:
+          tapa:
+            acrilico:
+              {}
+            delantera:
+              body_middle_top:
+                body_back:
+                  battery_pack_lid:
+                    {}
+                  holder:
+                    planar_1_1:
+                      planar_1:
+                        cell:
+                          {}
+                    planar_2_1:
+                      planar_2:
+                        cell_1:
+                          {}
+                  power_switch:
+                    {}
+                  usb_c_charger:
+                    bms:
+                      {}
+          trunk_bottom:
+            body_middle_bottom:
+              {}
+            roll_bearing:
+              {}
+            roll_bearing_1:
+              {}
+            trunk_mate_connector:
+              {}
+            trunk_top:
+              bno055:
+                z:
+                  {}
+              board:
+                {}
+              wj_wk00_0122topcabinetcase_95_9:
+                drive_palonier_9:
+                  neck_left_sheet:
+                    wj_wk00_0122topcabinetcase_95:
+                      drive_palonier:
+                        head_pitch_to_yaw:
+                          drive_palonier_6:
+                            wj_wk00_0122topcabinetcase_95_6:
+                              head_yaw_to_roll:
+                                drive_palonier_11:
+                                  wj_wk00_0122topcabinetcase_95_11:
+                                    wj_wk00_0123middlecase_56_11:
+                                      {}
+                                    wj_wk00_0124bottomcase_45_11:
+                                      head_roll_mount:
+                                        head:
+                                          bulb:
+                                            {}
+                                          bulb_1:
+                                            {}
+                                          cam:
+                                            {}
+                                          flash_light_module:
+                                            flash_reflector_interface:
+                                              {}
+                                          head_bot_sheet:
+                                            {}
+                                          left_eye:
+                                            glass_2:
+                                              glass:
+                                                {}
+                                          raspberrypizerow:
+                                            {}
+                                          right_eye:
+                                            glass_1:
+                                              glass_3:
+                                                {}
+                                          roll_bearing_2:
+                                            {}
+                                          sg90:
+                                            right_antenna_holder:
+                                              antenna_1:
+                                                {}
+                                          sg90_1:
+                                            left_antenna_holder:
+                                              antenna:
+                                                {}
+                                          speaker_stand:
+                                            speaker_interface:
+                                              speaker_top:
+                                                {}
+                                          z_3:
+                                            {}
+                                      passive_palonier_11:
+                                        {}
+                              wj_wk00_0123middlecase_56_6:
+                                {}
+                              wj_wk00_0124bottomcase_45_6:
+                                passive_palonier_6:
+                                  {}
+                      wj_wk00_0123middlecase_56:
+                        {}
+                      wj_wk00_0124bottomcase_45:
+                        neck_right_sheet:
+                          {}
+                        passive_palonier:
+                          {}
+                wj_wk00_0123middlecase_56_9:
+                  {}
+                wj_wk00_0124bottomcase_45_9:
+                  passive_palonier_9:
+                    {}
+              wj_wk00_0124bottomcase_45_7:
+                passive_palonier_7:
+                  {}
+                wj_wk00_0122topcabinetcase_95_7:
+                  drive_palonier_7:
+                    roll_motor_top_1:
+                      wj_wk00_0122topcabinetcase_95_12:
+                        drive_palonier_12:
+                          left_roll_to_pitch:
+                            wj_wk00_0122topcabinetcase_95_13:
+                              drive_palonier_13:
+                                left_knee_to_ankle_left_sheet_1:
+                                  left_cache:
+                                    {}
+                                  wj_wk00_0122topcabinetcase_95_4:
+                                    drive_palonier_4:
+                                      left_knee_to_ankle_left_sheet_3:
+                                        wj_wk00_0122topcabinetcase_95_10:
+                                          drive_palonier_10:
+                                            foot_top:
+                                              foot_side:
+                                                {}
+                                              planar_1_5:
+                                                planar_1_4:
+                                                  foot_bottom_pla:
+                                                    foot_bottom_tpu:
+                                                      z_2:
+                                                        {}
+                                                    planar_3_loop_closure_3:
+                                                      planar_3_loop_closure_2:
+                                                        foot_side__1__loop_closure:
+                                                          {}
+                                          wj_wk00_0123middlecase_56_10:
+                                            {}
+                                          wj_wk00_0124bottomcase_45_10:
+                                            left_knee_to_ankle_right_sheet_3:
+                                              leg_spacer_3:
+                                                {}
+                                            passive_palonier_10:
+                                              {}
+                                    wj_wk00_0123middlecase_56_4:
+                                      {}
+                                    wj_wk00_0124bottomcase_45_4:
+                                      left_knee_to_ankle_right_sheet_1:
+                                        leg_spacer_1:
+                                          {}
+                                      passive_palonier_4:
+                                        {}
+                              wj_wk00_0123middlecase_56_13:
+                                {}
+                              wj_wk00_0124bottomcase_45_13:
+                                passive_palonier_13:
+                                  {}
+                        wj_wk00_0123middlecase_56_12:
+                          {}
+                        wj_wk00_0124bottomcase_45_12:
+                          passive_palonier_12:
+                            {}
+                          roll_motor_bottom_1:
+                            {}
+                  wj_wk00_0123middlecase_56_7:
+                    {}
+              wj_wk00_0124bottomcase_45_8:
+                passive_palonier_8:
+                  {}
+                wj_wk00_0122topcabinetcase_95_8:
+                  drive_palonier_8:
+                    roll_motor_top:
+                      wj_wk00_0122topcabinetcase_95_3:
+                        drive_palonier_3:
+                          right_roll_to_pitch:
+                            wj_wk00_0122topcabinetcase_95_1:
+                              drive_palonier_1:
+                                left_knee_to_ankle_right_sheet_2:
+                                  leg_spacer_2:
+                                    {}
+                                  right_cache:
+                                    {}
+                                  wj_wk00_0124bottomcase_45_5:
+                                    passive_palonier_5:
+                                      {}
+                                    wj_wk00_0122topcabinetcase_95_5:
+                                      drive_palonier_5:
+                                        left_knee_to_ankle_left_sheet:
+                                          wj_wk00_0122topcabinetcase_95_2:
+                                            drive_palonier_2:
+                                              foot_top_1:
+                                                foot_side_1:
+                                                  {}
+                                                planar_1_3:
+                                                  planar_1_2:
+                                                    foot_bottom_pla_1:
+                                                      foot_bottom_tpu_1:
+                                                        z_4:
+                                                          {}
+                                                      planar_3_loop_closure_1:
+                                                        planar_3_loop_closure:
+                                                          foot_side__1__loop_closure_1:
+                                                            {}
+                                            wj_wk00_0123middlecase_56_2:
+                                              {}
+                                            wj_wk00_0124bottomcase_45_2:
+                                              left_knee_to_ankle_right_sheet:
+                                                leg_spacer:
+                                                  {}
+                                              passive_palonier_2:
+                                                {}
+                                      left_knee_to_ankle_left_sheet_2:
+                                        {}
+                                      wj_wk00_0123middlecase_56_5:
+                                        {}
+                              wj_wk00_0123middlecase_56_1:
+                                {}
+                              wj_wk00_0124bottomcase_45_1:
+                                passive_palonier_1:
+                                  {}
+                        wj_wk00_0123middlecase_56_3:
+                          {}
+                        wj_wk00_0124bottomcase_45_3:
+                          passive_palonier_3:
+                            {}
+                          roll_motor_bottom:
+                            {}
+                  wj_wk00_0123middlecase_56_8:
+                    {}
+              z_1:
+                {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: root
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.1186270713806152
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.09550568461418152
+        Y: -0.3793267011642456
+        Z: -0.10641524195671082
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.14539910852909088
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.8654018044471741
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1043
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000001f300000371fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005d00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f00000371000000cc00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000371fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003f00000371000000a900fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d00650100000000000007800000026f00fffffffb0000000800540069006d00650100000000000004500000000000000000000004720000037100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 1920
+  Y: 0
