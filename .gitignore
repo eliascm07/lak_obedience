@@ -21,3 +21,6 @@ Thumbs.db
 
 # Linux
 *.swp
+
+# Virtual enviroment
+.venv/
