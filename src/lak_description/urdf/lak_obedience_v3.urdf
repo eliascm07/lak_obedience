@@ -1,0 +1,727 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/cf0e84da82f2b2876dc40bd2/w/cd92cf543a8dd795685852f6/e/ad469945294eb5c1768f64b5 -->
+<robot name="lak-obedience">
+  <!-- Link base_link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.0362742 -8.56256e-05 0.0382156" rpy="0 0 0"/>
+      <mass value="0.814016"/>
+      <inertia ixx="0.00197164" ixy="-1.40062e-05" ixz="-1.58095e-05" iyy="0.00435379" iyz="-2.13619e-06" izz="0.00375993"/>
+    </inertial>
+    <!-- Part delantera -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/base_link_combined.stl"/>
+      </geometry>
+      <material name="delantera_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/base_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame trunk (dummy link + fixed joint) -->
+  <link name="trunk">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="trunk_frame" type="fixed">
+    <origin xyz="-0.024 -0 0.0881909" rpy="-0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="trunk"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame imu (dummy link + fixed joint) -->
+  <link name="imu">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="imu_frame" type="fixed">
+    <origin xyz="-0.08711 0 0.0422909" rpy="-0 0 -0"/>
+    <parent link="base_link"/>
+    <child link="imu"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link L_hip_yaw_link-->
+  <link name="L_hip_yaw_link">
+    <inertial>
+      <origin xyz="0.000795081 -5.46541e-06 -0.03306" rpy="0 0 0"/>
+      <mass value="0.06648"/>
+      <inertia ixx="2.44411e-05" ixy="2.357e-09" ixz="-3.81059e-07" iyy="2.81818e-05" iyz="-7.5e-09" izz="1.42687e-05"/>
+    </inertial>
+    <!-- Part roll_motor_bottom -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/L_hip_yaw_link_combined.stl"/>
+      </geometry>
+      <material name="roll_motor_bottom_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="-0 0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/L_hip_yaw_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link L_hip_roll_link -->
+  <link name="L_hip_roll_link">
+    <inertial>
+      <origin xyz="0.0507497 -0.000407512 0.0204377" rpy="0 0 0"/>
+      <mass value="0.07516"/>
+      <inertia ixx="2.52682e-05" ixy="1.22744e-07" ixz="-7.32857e-07" iyy="4.15738e-05" iyz="-1.05692e-07" izz="2.82869e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/L_hip_roll_link_combined.stl"/>
+      </geometry>
+      <material name="left_roll_to_pitch_material">
+        <color rgba="0.909804 0.572549 0.164706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/L_hip_roll_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link L_thigh_link -->
+  <link name="L_thigh_link">
+    <inertial>
+      <origin xyz="0.00253369 -0.0390636 0.0102776" rpy="0 0 0"/>
+      <mass value="0.12407"/>
+      <inertia ixx="0.000211406" ixy="-2.68706e-05" ixz="3.81906e-06" iyy="7.83759e-05" iyz="2.08009e-05" izz="0.000225619"/>
+    </inertial>
+    <!-- Part left_cache -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/L_thigh_link_combined.stl"/>
+      </geometry>
+      <material name="left_cache_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/L_thigh_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link L_shank_link -->
+  <link name="L_shank_link">
+    <inertial>
+      <origin xyz="5.01859e-06 -0.0577465 0.0181136" rpy="0 0 0"/>
+      <mass value="0.07259"/>
+      <inertia ixx="4.99575e-05" ixy="1.0382e-08" ixz="2.252e-09" iyy="1.87273e-05" iyz="8.8105e-08" izz="4.23932e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/L_shank_link_combined.stl"/>
+      </geometry>
+      <material name="leg_spacer_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/L_shank_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link L_foot_link -->
+  <link name="L_foot_link">
+    <inertial>
+      <origin xyz="0.0110718 -0.0246608 0.0190626" rpy="0 0 0"/>
+      <mass value="0.07524"/>
+      <inertia ixx="1.87482e-05" ixy="1.58839e-06" ixz="-6.524e-09" iyy="6.74427e-05" iyz="5.6739e-08" izz="6.061e-05"/>
+    </inertial>
+    <!-- Part foot_side -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/L_foot_link_combined.stl"/>
+      </geometry>
+      <material name="foot_side_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/L_foot_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame left_foot (dummy link + fixed joint) -->
+  <link name="left_foot">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="left_foot_frame" type="fixed">
+    <origin xyz="0.0005 -0.036225 0.01955" rpy="-1.5708 -0 -0"/>
+    <parent link="L_foot_link"/>
+    <child link="left_foot"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from L_shank_link to L_foot_link -->
+  <joint name="left_ankle" type="revolute">
+    <origin xyz="-0 -0.07865 0.0001" rpy="-0 0 -0"/>
+    <parent link="L_shank_link"/>
+    <child link="L_foot_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from L_thigh_link to L_shank_link -->
+  <joint name="left_knee" type="revolute">
+    <origin xyz="-0 -0.07865 0.0001" rpy="-0 -0 0"/>
+    <parent link="L_thigh_link"/>
+    <child link="L_shank_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from L_hip_roll_link to L_thigh_link -->
+  <joint name="left_hip_pitch" type="revolute">
+    <origin xyz="0.07415 -0 0.03511" rpy="3.14159 1.5708 0"/>
+    <parent link="L_hip_roll_link"/>
+    <child link="L_thigh_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.22173" upper="0.523599"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from L_hip_yaw_link to L_hip_roll_link -->
+  <joint name="left_hip_roll" type="revolute">
+    <origin xyz="0.01905 0 -0.046015" rpy="-1.5708 0 1.5708"/>
+    <parent link="L_hip_yaw_link"/>
+    <child link="L_hip_roll_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.436332" upper="0.436332"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from base_link to L_hip_yaw_link -->
+  <joint name="left_hip_yaw" type="revolute">
+    <origin xyz="-0.019 0.035 0.0459409" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="L_hip_yaw_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.523599" upper="0.523599"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Link neck_pitch_link -->
+  <link name="neck_pitch_link">
+    <inertial>
+      <origin xyz="-5.63137e-06 0.0492968 0.0181786" rpy="0 0 0"/>
+      <mass value="0.06618"/>
+      <inertia ixx="3.49456e-05" ixy="8.756e-09" ixz="-2.156e-09" iyy="1.70231e-05" iyz="-1.8519e-08" izz="2.80043e-05"/>
+    </inertial>
+    <!-- Part neck_left_sheet -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/neck_pitch_link_combined.stl"/>
+      </geometry>
+      <material name="neck_left_sheet_material">
+        <color rgba="0.223529 0.219608 0.219608 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/neck_pitch_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link head_pitch_link -->
+  <link name="head_pitch_link">
+    <inertial>
+      <origin xyz="-0.00766247 0.026015 0.0186681" rpy="0 0 0"/>
+      <mass value="0.0169378"/>
+      <inertia ixx="9.43036e-06" ixy="1.35195e-06" ixz="3.059e-08" iyy="4.64763e-06" iyz="-8.428e-08" izz="8.02915e-06"/>
+    </inertial>
+    <!-- Part head_pitch_link -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/head_pitch_link_combined.stl"/>
+      </geometry>
+      <material name="head_pitch_to_yaw_material">
+        <color rgba="0.4 0.4 0.4 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/head_pitch_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link neck_yaw_link -->
+  <link name="neck_yaw_link">
+    <inertial>
+      <origin xyz="0.00412907 3.95745e-06 -0.0222828" rpy="0 0 0"/>
+      <mass value="0.0918099"/>
+      <inertia ixx="3.11706e-05" ixy="4.294e-09" ixz="-4.41251e-06" iyy="6.94935e-05" iyz="-3.82e-09" izz="7.04025e-05"/>
+    </inertial>
+    <!-- Part head_yaw_to_roll -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/neck_yaw_link_combined.stl"/>
+      </geometry>
+      <material name="head_yaw_to_roll_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/neck_yaw_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link head_link -->
+  <link name="head_link">
+    <inertial>
+      <origin xyz="0.0086005 -0.00294249 0.0224741" rpy="0 0 0"/>
+      <mass value="0.414631"/>
+      <inertia ixx="0.00247188" ixy="-1.12645e-05" ixz="9.53347e-05" iyy="0.00169561" iyz="-1.24656e-05" izz="0.0011048"/>
+    </inertial>
+    <!-- Part right_antenna_holder -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/head_link_combined.stl"/>
+      </geometry>
+      <material name="right_antenna_holder_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0 0" rpy="-0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/head_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame head (dummy link + fixed joint) -->
+  <link name="head">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="head_frame" type="fixed">
+    <origin xyz="0.04245 -0 0.03595" rpy="-0 1.5708 0"/>
+    <parent link="head_link"/>
+    <child link="head"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from neck_yaw_link to head_link -->
+  <joint name="head_roll" type="revolute">
+    <origin xyz="0.04095 0 -0.01915" rpy="-0 -1.5708 0"/>
+    <parent link="neck_yaw_link"/>
+    <child link="head_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.523599" upper="0.523599"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from head_pitch_link to neck_yaw_link -->
+  <joint name="head_yaw" type="revolute">
+    <origin xyz="-0 0.057 0.01905" rpy="-1.5708 0 0"/>
+    <parent link="head_pitch_link"/>
+    <child link="neck_yaw_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.79253" upper="2.79253"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from neck_pitch_link to head_pitch_link -->
+  <joint name="head_pitch" type="revolute">
+    <origin xyz="-0 0.066 0" rpy="-0 -0 0"/>
+    <parent link="neck_pitch_link"/>
+    <child link="head_pitch_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.785398" upper="0.785398"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from base_link to neck_pitch_link -->
+  <joint name="neck_pitch" type="revolute">
+    <origin xyz="0.001 0.01915 0.0900009" rpy="1.5708 -0 0"/>
+    <parent link="base_link"/>
+    <child link="neck_pitch_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.349066" upper="1.13446"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Link R_hip_yaw_link -->
+  <link name="R_hip_yaw_link">
+    <inertial>
+      <origin xyz="0.000795081 -5.46541e-06 -0.03306" rpy="0 0 0"/>
+      <mass value="0.06648"/>
+      <inertia ixx="2.44411e-05" ixy="2.357e-09" ixz="-3.81059e-07" iyy="2.81818e-05" iyz="-7.5e-09" izz="1.42687e-05"/>
+    </inertial>
+    <!-- Part roll_motor_bottom_2 -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/R_hip_yaw_link_combined.stl"/>
+      </geometry>
+      <material name="roll_motor_bottom_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="0 -0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/R_hip_yaw_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link R_hip_roll_link -->
+  <link name="R_hip_roll_link">
+    <inertial>
+      <origin xyz="-0.0507497 -0.000417205 0.0204377" rpy="0 0 0"/>
+      <mass value="0.07516"/>
+      <inertia ixx="2.52676e-05" ixy="-1.31172e-07" ixz="7.32857e-07" iyy="4.15738e-05" iyz="-8.9468e-08" izz="2.82863e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/R_hip_roll_link_combined.stl"/>
+      </geometry>
+      <material name="right_roll_to_pitch_material">
+        <color rgba="0.909804 0.572549 0.164706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/R_hip_roll_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link R_thigh_link -->
+  <link name="R_thigh_link">
+    <inertial>
+      <origin xyz="0.00253369 0.0390636 0.010809" rpy="0 0 0"/>
+      <mass value="0.12407"/>
+      <inertia ixx="0.000212363" ixy="2.68706e-05" ixz="3.9656e-06" iyy="7.93324e-05" iyz="-2.17407e-05" izz="0.000225619"/>
+    </inertial>
+    <!-- Part right_cache -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/R_thigh_link_combined.stl"/>
+      </geometry>
+      <material name="right_cache_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/R_thigh_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link R_shank_link -->
+  <link name="R_shank_link">
+    <inertial>
+      <origin xyz="5.01859e-06 -0.0577465 0.0181136" rpy="0 0 0"/>
+      <mass value="0.07259"/>
+      <inertia ixx="4.99575e-05" ixy="1.0382e-08" ixz="2.252e-09" iyy="1.87273e-05" iyz="8.8105e-08" izz="4.23932e-05"/>
+    </inertial>
+    <!-- Part leg_spacer_4 -->
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-0.0 0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/R_shank_link_combined.stl"/>
+      </geometry>
+      <material name="leg_spacer_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="-0.0 0 -0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/R_shank_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link R_foot_link -->
+  <link name="R_foot_link">
+    <inertial>
+      <origin xyz="0.0110718 -0.0246608 0.0190626" rpy="0 0 0"/>
+      <mass value="0.07524"/>
+      <inertia ixx="1.87482e-05" ixy="1.58839e-06" ixz="-6.524e-09" iyy="6.74427e-05" iyz="5.6739e-08" izz="6.061e-05"/>
+    </inertial>
+    <!-- Part foot_side_2 -->
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-0.0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/visual/R_foot_link_combined.stl"/>
+      </geometry>
+      <material name="foot_side_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="-0.0 0 0"/>
+      <geometry>
+        <mesh filename="package://lak_description/meshes_v3/collision_2/R_foot_link_combined.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame right_foot (dummy link + fixed joint) -->
+  <link name="right_foot">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="right_foot_frame" type="fixed">
+    <origin xyz="0.0005 -0.036225 0.01955" rpy="-1.5708 0 -0"/>
+    <parent link="R_foot_link"/>
+    <child link="right_foot"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from R_shank_link to R_foot_link -->
+  <joint name="right_ankle" type="revolute">
+    <origin xyz="0 -0.07865 0.0001" rpy="-0 0 -0"/>
+    <parent link="R_shank_link"/>
+    <child link="R_foot_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from R_thigh_link to R_shank_link -->
+  <joint name="right_knee" type="revolute">
+    <origin xyz="-0 0.07865 0.037" rpy="-3.14159 -0 -0"/>
+    <parent link="R_thigh_link"/>
+    <child link="R_shank_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from R_hip_roll_link to R_thigh_link -->
+  <joint name="right_hip_pitch" type="revolute">
+    <origin xyz="-0.07415 -0 0.03511" rpy="-0 1.5708 0"/>
+    <parent link="R_hip_roll_link"/>
+    <child link="R_thigh_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.523599" upper="1.22173"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from R_hip_yaw_link to R_hip_roll_link -->
+  <joint name="right_hip_roll" type="revolute">
+    <origin xyz="0.01905 0 -0.046015" rpy="-1.5708 -0 1.5708"/>
+    <parent link="R_hip_yaw_link"/>
+    <child link="R_hip_roll_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.436332" upper="0.436332"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+  <!-- Joint from base_link to R_hip_yaw_link -->
+  <joint name="right_hip_yaw" type="revolute">
+    <origin xyz="-0.019 -0.035 0.0459409" rpy="-0 -0 -0"/>
+    <parent link="base_link"/>
+    <child link="R_hip_yaw_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.523599" upper="0.523599"/>
+    <dynamics damping="0.60" friction="0.052"/>
+  </joint>
+
+<!-- =================================================== -->
+<!--             TRANSMISIONES PIERNA IZQUIERDA          -->
+<!-- =================================================== -->
+<transmission name="trans_left_hip_yaw">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_hip_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_left_hip_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_left_hip_roll">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_hip_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_left_hip_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_left_hip_pitch">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_hip_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_left_hip_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_left_knee">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_knee">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_left_knee">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_left_ankle">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_ankle">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_left_ankle">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- =================================================== -->
+<!--              TRANSMISIONES PIERNA DERECHA           -->
+<!-- =================================================== -->
+<transmission name="trans_right_hip_yaw">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_hip_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_right_hip_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_right_hip_roll">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_hip_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_right_hip_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_right_hip_pitch">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_hip_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_right_hip_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_right_knee">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_knee">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_right_knee">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_right_ankle">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_ankle">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_right_ankle">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- =================================================== -->
+<!--              TRANSMISIONES CABEZA        -->
+<!-- =================================================== -->
+<transmission name="trans_neck_pitch">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="neck_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_neck_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_head_pitch">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="head_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_head_pitch">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_head_yaw">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="head_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_head_yaw">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="trans_head_roll">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="head_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_head_roll">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

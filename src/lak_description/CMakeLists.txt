@@ -26,7 +26,7 @@ endif()
 
 # Instalar carpetas
 install(
-  DIRECTORY urdf meshes meshes_v2
+  DIRECTORY urdf meshes meshes_v2 meshes_v3
   DESTINATION share/${PROJECT_NAME}
 )
 

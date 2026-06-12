@@ -275,12 +275,14 @@
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
+    <!--  Puede remplazarse por un cilindro simple
     <collision>
       <origin xyz="-0.129625 -0.0105 0.0650134" rpy="-3.14159 0 2.19131"/>
       <geometry>
         <mesh filename="package://lak_description/meshes_v2/collision/cell.stl"/>
       </geometry>
     </collision>
+     -->
     <!-- Part holder -->
     <visual>
       <origin xyz="-0.139625 -0.0635245 0.031455" rpy="-0 1.5708 0"/>
@@ -595,7 +597,7 @@
     <visual>
       <origin xyz="-0 -0.035 0.01905" rpy="-0 0 -0"/>
       <geometry>
-        <mesh filename="package://lak_v2_description/assets/roll_motor_bottom.stl"/>
+        <mesh filename="package://lak_description/meshes_v2/visual/roll_motor_bottom.stl"/>
       </geometry>
       <material name="roll_motor_bottom_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -604,14 +606,14 @@
     <collision>
       <origin xyz="-0 -0.035 0.01905" rpy="-0 0 -0"/>
       <geometry>
-        <mesh filename="package://lak_v2_description/assets/roll_motor_bottom.stl"/>
+        <mesh filename="package://lak_description/meshes_v2/collision/roll_motor_bottom.stl"/>
       </geometry>
     </collision>
     <!-- Part roll_motor_top -->
     <visual>
       <origin xyz="0 -0.035 0.01905" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://lak_v2_description/assets/roll_motor_top.stl"/>
+        <mesh filename="package://lak_description/meshes_v2/visual/roll_motor_top.stl"/>
       </geometry>
       <material name="roll_motor_top_material">
         <color rgba="0.901961 0.901961 0.901961 1"/>
@@ -620,7 +622,7 @@
     <collision>
       <origin xyz="0 -0.035 0.01905" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://lak_v2_description/assets/roll_motor_top.stl"/>
+        <mesh filename="package://lak_description/meshes_v2/collision/roll_motor_top.stl"/>
       </geometry>
     </collision>
     <!-- Part wj_wk00_0123middlecase_56_4 -->
@@ -1717,12 +1719,14 @@
         <color rgba="0.647059 0.647059 0.647059 1"/>
       </material>
     </visual>
+    <!-- 
     <collision>
       <origin xyz="0.00522415 -0.0588802 0.0190505" rpy="0 1.30458 -1.32344"/>
       <geometry>
         <mesh filename="package://lak_description/meshes_v2/collision/full_speaker.stl"/>
       </geometry>
     </collision>
+    -->
     <!-- Part roll_bearing_3 -->
     <visual>
       <origin xyz="-0 -0.035 0.167325" rpy="0 -0 0"/>
